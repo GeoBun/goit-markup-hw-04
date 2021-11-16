@@ -3,6 +3,7 @@
          #757575
           #FFFFFF
           #2196F3
+          #AFB1B8
            футер бекграунд #2F303A  */
     
 :root {
@@ -14,6 +15,7 @@
     --foot-contacts-color :rgba(255, 255, 255, 0.6);
     --hiro-btn-hover-color : #188CE8;
     --teem-bg-color : #F5F4FA;
+    --social-site: #AFB1B8;
 }
 *,
 *::after,
@@ -66,13 +68,15 @@ body {
     .container {
         width: 1200px;
         justify-items: start;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-right: auto;
         margin-left: auto;
     }
 
     .head{
+        padding-top: 24px;
+        padding-bottom: 24px;
         border-bottom: 1px solid #ECECEC;
     }
 
@@ -81,6 +85,7 @@ body {
         align-items: center;
         margin-right: auto;
         margin-left: auto;
+
     }
 
     /* logotype */
@@ -129,11 +134,6 @@ body {
         color: var(--accent-color);
     }
 
-    .site-nav .item {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-
     .link .text {
         color: var(--title-text-color);
     }
@@ -143,7 +143,7 @@ body {
     }
 
     .site-nav.address {
-        margin-left: 331px;
+        margin-left: 305px;
     }
 
     .site-nav .link :hover,
@@ -162,19 +162,33 @@ body {
     }
 
     .site-nav.address .link + .link{
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .contacts{
-        font-weight: 500;
         display: flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
-
+        align-items: center;
         font-weight: 500;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
     }
+    
+
+    /* mail */
+
+    .icon-mail{
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
+    .icon-mail:hover{
+        fill: var(--accent-color);
+    }
+
 
     .menu{
         font-weight: 500;
@@ -206,7 +220,7 @@ body {
      /* hiro section */
 
     .hiro{
-        display: flexbox;
+        display: block;
         width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
@@ -215,6 +229,7 @@ body {
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(../images/Img-bg.jpg);
+        object-position: cover;
         justify-content: center;
         text-align: center;
         background-repeat: no-repeat;
@@ -247,104 +262,6 @@ body {
 
     .features .item+.item{
         margin-left: 30px;
-    }
-
-    .engaged {
-        display: flex;
-        justify-content: center;
-    }
-
-    .engaged-zero{
-        padding-top: 0;
-    }
-
-    .engaged .item + .item {
-        margin-left: 30px;
-    }
-
-    /* our team */
-
-    .team {
-        display: flex;
-        justify-content: center;
-        background:var(--teem-bg-color);
-    }
-
-    .team .item .name{
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        margin-bottom: 0px;
-    }
-
-    .team .item .text{
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-
-
-    .team .item{
-        background-color: var(--primery-white-color);
-    }
-
-    .team .item + .item {
-        margin-left: 30px;
-    }
-
-    .team-icon{
-        margin-top: 16px;
-        margin-left: 32px;
-    }
-
-    .icon-link:hover{
-        fill:var(--accent-color);
-    }
-
-    .icon{
-        display: flexbox;
-        justify-items: start;
-        width: 44px;
-        height: 44px;
-        
-    }
-
-
-    .icon:hover{
-        fill: var(--accent-color);
-    }
-
-
-
-    /* #afb1b8 */
-   
-    .section-title {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-
-        font-size: 36px;
-        line-height: 1.16; 
-        color: var(--title-text-color);
-    }
-
-    .text-title {
-        margin-top: 0;
-        margin-bottom: 10px;
-
-        font-size: 14px;
-        line-height: 1.14;
-    }
-
-    .list .text-title {
-        font-size: 18px;
-        line-height: 2;
-        color: var(--title-text-color );
-    } 
-
-    .list .text-title .name{
-        font-weight: 500;
     }
 
     .features .item {
@@ -392,6 +309,115 @@ body {
         background-position: center;
     } 
 
+    .engaged {
+        display: flex;
+        justify-content: center;
+    }
+
+    .engaged-zero{
+        padding-top: 0;
+    }
+
+    .engaged .item + .item {
+        margin-left: 30px;
+    }
+
+    /* our team */
+
+    .team {
+        display: flex;
+        justify-content: center;
+        background:var(--teem-bg-color);
+    }
+
+    .team .item .name{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .team .item .text{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+    .team .item{
+        background-color: var(--primery-white-color);
+    }
+
+    .team .item + .item {
+        margin-left: 30px;
+    }
+
+    .social-icon {
+        display: flex;
+        justify-items: center;
+        margin-left: 32px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+
+    .icon-link+.icon-link{
+        margin-left: 10px;
+    } 
+
+    .icon-link{
+        display: flex;
+        padding: 12px 12px;
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: 100%;
+        background-color: var(--primery-white-color);
+    }
+
+    .icon-link:hover{
+        background-color: var(--accent-color);
+    }
+
+
+    .icon{
+        display: flex;
+        fill: var(--social-site);
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon:hover{
+        fill: var(--primery-white-color);
+    }
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.16; 
+        color: var(--title-text-color);
+    }
+
+    .text-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .list .text-title {
+        font-size: 18px;
+        line-height: 2;
+        color: var(--title-text-color );
+    } 
+
+    .list .text-title .name{
+        font-weight: 500;
+    }
+
     .text{
         margin-top: 0;
         margin-bottom: 0;
@@ -401,7 +427,43 @@ body {
         color: var(--primary-text-color);
     }
 
+    /* customers */
+
+    .customers .item{
+        content: "";
+        display: block ;
+        height: 92px;
+        width: 170px;
+        background: var(--primery-white-color);
+        border: 1px solid #AFB1B8;
+        fill: var(--social-site);
+        border-radius: 4px;
+    }
+
+    .customers .item:hover{
+        border: 1px solid var(--accent-color);
+    }
+
+    .customers .item{
+        display: inline-flex;
+        margin-left: -10px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .customers .item+.item{
+        margin-left: 30px;
+    }
+
+    .customers-icon :hover{
+        fill: var(--accent-color);
+    }
+    
     /* Footer */
+
+    .foot-container{
+        display: flex;
+    }
 
     .foot-logo {
         margin-bottom: 20px;
@@ -432,6 +494,36 @@ body {
     .foot .contact {
         font-style: normal;
         color: var(--foot-contacts-color);
+    }
+
+    .foot .icon-link{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .foot .icon-link:hover{
+        background-color: var(--accent-color);
+    }
+
+    .foot-social-title{
+        font-weight: bold;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+    .foot .social-icon{
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .foot .social-icon .icon{
+        fill: var(--primery-white-color);
+    }
+
+    .foot-social{
+        margin-top: 12px;
+        margin-left: 70px;
     }
 
     /* page two */
